@@ -24,6 +24,11 @@ public abstract class VeiculoAutomotor implements BemSeguravel {
         return anoFabricacao;
     }
 
+    @Override
+    public String descrever() {
+        return "Veículo '" + getModelo() + "', ano " + getAnoFabricacao() + " com valor de R$" + getValorMercado();
+    }
+
     //carro = valor de mercado * 4% (se ano do carro <2000 adicionar mais 5% no valor final)
     //caminhao = valor de mercado * 2% e +50 reais p/ eixo
 
